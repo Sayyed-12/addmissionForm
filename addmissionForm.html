@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Admission Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            width: 50%;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            font-family: Algerian, sans-serif;
+            color: #333;
+            text-decoration: underline;
+            margin-bottom: 20px;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="date"],
+        input[type="tel"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="radio"] {
+            margin-bottom: 10px;
+            margin-right: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>School Admission Form</h1>
+    <form action="processForm.php" method="post">
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" name="first_name" required><br>
+
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" name="last_name" required><br>
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label><br>
+
+        <label for="date_of_birth">Date Of Birth:</label>
+        <input type="date" id="date_of_birth" name="date_of_birth" ><br>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address"  ><br>
+
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" ><br>
+
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state"  ><br>
+
+        <label for="postal_code">Postal Code:</label>
+        <input type="text" id="postal_code" name="postal_code"  ><br>
+
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country"  ><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"  ><br>
+
+        <label for="phone_number">Phone:</label>
+        <input type="tel" id="phone_number" name="phone_number"><br><br>
+
+        <label for="guardian_name">Guardian Name:</label>
+        <input type="text" id="guardian_name" name="guardian_name"  ><br>
+
+        <label for="guardian_relationship">Guardian Relationship:</label>
+        <input type="text" id="guardian_relationship" name="guardian_relationship"  ><br>
+
+        <label for="guardian_phone">Guardian Phone:</label>
+        <input type="tel" id="guardian_phone" name="guardian_phone"  ><br>
+
+        <label for="previous_school">Previous School:</label>
+        <input type="text" id="previous_school" name="previous_school"  ><br>
+
+        <label for="grade_applied_for">Grade Applied For:</label>
+        <input type="text" id="grade_applied_for" name="grade_applied_for"  ><br>
+
+        <label for="application_date">Application Date:</label>
+        <input type="date" id="application_date" name="application_date" ><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</div>
+</body>
+</html>
